@@ -7,7 +7,7 @@ const DropDown  = () => {
     <StyledWrapper>
       <div className="menu">
         <div className="item">
-          <div className="link">
+          <div className="link hover:text-white">
             <span> Our Services </span>
             <svg viewBox="0 0 360 360" space="preserve">
               <g id="SVGRepo_iconCarrier">
@@ -99,7 +99,7 @@ const StyledWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0a3cff;
+    background-color: #219ebc;
     z-index: -1;
     transform: scaleX(0);
     transform-origin: left;
@@ -129,7 +129,6 @@ const StyledWrapper = styled.div`
     margin-left: -25%;
     margin-top: 1px;
     backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.4);
     overflow: hidden;
     border: 1px solid #cccccc;
     opacity: 0;
@@ -148,7 +147,7 @@ const StyledWrapper = styled.div`
     pointer-events: auto;
     margin-top: 1px;
     border-top: transparent;
-    border-color: #0a3cff;
+    border-color: #219ebc;
   }
 
   /*.menu .item:hover .link {
@@ -165,6 +164,10 @@ const StyledWrapper = styled.div`
     fill: #ffffff;
     transform: rotate(-180deg);
   }*/
+
+  .submenu {
+    background: white;
+  }
 
   .submenu .submenu-item {
     width: 100%;
@@ -192,7 +195,7 @@ const StyledWrapper = styled.div`
     transform: scaleX(0);
     width: 100%;
     height: 100%;
-    background-color: #0a3cff;
+    background-color: #219ebc;
     z-index: -1;
     transform-origin: left;
     transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);

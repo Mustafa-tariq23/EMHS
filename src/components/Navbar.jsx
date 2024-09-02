@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" mirror h-18 bg-white border-gray-200 scroll-smooth focus:scroll-auto shadow-lg	 fixed w-full z-30 ">
+    <nav className="sticky mirror h-18 top-0 left-0 scroll-smooth bg-white border-gray-200 focus:scroll-auto shadow-lg w-full z-0 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <span className=" h-16 w-28 p-4 self-center text-2xl font-semibold whitespace-nowrap text-white flex items-center space-x-3 rtl:space-x-reverse">
           <Link to="/">
@@ -53,13 +53,13 @@ const Navbar = () => {
         >
           <ul className="flex flex-col font-medium p-0 md:p-0 mt-4 border rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             {/* Home */}
-            <li className="hover:bg-[#0a3cff] ease-linear hover:text-white rounded-lg duration-200">
+            <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
               <Link to="/" className="block py-2 px-2" aria-current="page">
                 Home
               </Link>
             </li>
             {/* about */}
-            <li className="hover:bg-[#0a3cff] ease-linear hover:text-white rounded-lg duration-200">
+            <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
               <Link
                 to="/AboutUs"
                 className="block py-2 px-2 duration-500 rounded"
@@ -68,13 +68,13 @@ const Navbar = () => {
               </Link>
             </li>
             {/* Services */}
-            <li className="flex items-center hover:bg-[#0a3cff] ease-linear hover:text-white rounded-lg duration-200">
+            <li className="flex items-center hover:bg-[#219ebc] ease-linear rounded-lg duration-200">
               <DropDown />
             </li>
             {/* Contact */}
-            <li className="hover:bg-[#0a3cff] ease-linear hover:text-white rounded-lg duration-200">
+            <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
               <Link
-                to="/ContactUs"
+                to="/contactUs"
                 className="block px-2 py-2 duration-500 rounded"
               >
                 Contact Us
