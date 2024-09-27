@@ -1,0 +1,21 @@
+header{
+    overflow-x: hidden;
+}
+
+.hero_BG_IMG {
+    background-image: url('./assets/heroIMG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // padding: 100px;
+    position: absolute;
+    // opacity: 40%;
+    z-index: -10;
+}
+.heroContent{
+    // opacity: 100% !imp   ortant;
+    width: 100vw;
+    z-index: 1 !important;
+    background-color: #0e0e22ab;
+}

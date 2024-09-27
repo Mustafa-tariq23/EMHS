@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ imgSrc, title, para, index }) => {
   return (
-    <div className="relative flex h-[28rem] w-72 lg:w-76 flex-col rounded-xl bg-white bg-clip-border border text-gray-700 shadow-md mb-6 self-start  hover:shadow-lg hover:shadow-[#219ebc] ease-out hover:duration-500 hover:scale-105">
+    <div className="relative flex h-[28rem] w-72 lg:w-76 flex-col rounded-xl bg-white bg-clip-border border text-gray-700 shadow-md mb-6 self-start  hover:shadow-lg hover:shadow-[#219ebc] transition ease-in-out hover:duration-500 hover:scale-105">
       {imgSrc ? (
         <img
           src={imgSrc}
@@ -28,7 +28,7 @@ const Card = ({ imgSrc, title, para, index }) => {
         <button
           data-ripple-light="true"
           type="button"
-          className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          className="select-none rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-[#219ebc] border border-1 border-blue-300 shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           Read More
         </button>

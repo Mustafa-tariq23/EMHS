@@ -42,24 +42,27 @@ const limitWords = (text, wordLimit) => {
 
 const ServicesGrid = () => {
   return (
-    <div className="flex items-center justify-center">
-      <div className="px-0 py-16 grid grid-cols-1 items-center justify-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-8">
-        {ServicesData.map((item, index) => {
-          // Limiting the "para" prop to 41 words for the first card and 10 words for the rest
-          let wordCount;
-          const limitedPara = (wordCount) => limitWords(item.para, wordCount);
-          return (
-            <Card
-              key={index}
-              imgSrc={item.img}
-              title={item.title}
-              para={limitedPara(index === 0 ? 41 : 10)}
-              index={index}
-            />
-          );
-        })}
+    <>
+      <h1 className="text-center text-4xl py-16 font-bold ">Our <span className="text-[#FC8602]">Services</span></h1>
+      <div className="flex px-0 py-8 items-center justify-center">
+        <div className=" grid grid-cols-1 items-center justify-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-8">
+          {ServicesData.map((item, index) => {
+            // Limiting the "para" prop to 41 words for the first card and 10 words for the rest
+            let wordCount;
+            const limitedPara = (wordCount) => limitWords(item.para, wordCount);
+            return (
+              <Card
+                key={index}
+                imgSrc={item.img}
+                title={item.title}
+                para={limitedPara(index === 0 ? 41 : 10)}
+                index={index}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

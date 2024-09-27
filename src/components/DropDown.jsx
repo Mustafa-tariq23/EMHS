@@ -7,7 +7,7 @@ const DropDown  = () => {
     <StyledWrapper>
       <div className="menu">
         <div className="item">
-          <div className="link hover:text-white">
+          <div className="link hover:text-white duration-500">
             <span> Our Services </span>
             <svg viewBox="0 0 360 360" space="preserve">
               <g id="SVGRepo_iconCarrier">
@@ -89,7 +89,7 @@ const StyledWrapper = styled.div`
     padding: 12px 8px;
     border-radius: 16px;
     overflow: hidden;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .menu .link::after {
@@ -103,14 +103,14 @@ const StyledWrapper = styled.div`
     z-index: -1;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .menu .link svg {
     width: 14px;
     height: 14px;
     fill: #000000;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .menu .item {
@@ -130,11 +130,12 @@ const StyledWrapper = styled.div`
     margin-top: 1px;
     backdrop-filter: blur(30px);
     overflow: hidden;
+    // background-color#cccccc;
     border: 1px solid #cccccc;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-12px);
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateY(-50px);
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 1;
     pointer-events: none;
     list-style: none;
@@ -171,7 +172,7 @@ const StyledWrapper = styled.div`
 
   .submenu .submenu-item {
     width: 100%;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .submenu .submenu-link {
@@ -180,7 +181,7 @@ const StyledWrapper = styled.div`
     width: 100%;
     position: relative;
     text-align: center;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .submenu .submenu-item:last-child .submenu-link {
@@ -198,7 +199,7 @@ const StyledWrapper = styled.div`
     background-color: #219ebc;
     z-index: -1;
     transform-origin: left;
-    transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .submenu .submenu-link:hover:before {
