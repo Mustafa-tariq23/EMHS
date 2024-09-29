@@ -3,6 +3,9 @@ import Header from './Header'
 import ServicesGrid from './homepageSections/ServicesGrid'
 import AboutSection from './homepageSections/AboutSection'
 import FAQs from './FAQs'
+import TeamExperts from './TeamExperts'
+import TraumaFocusedTherapy from './TherapySection'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -10,7 +13,10 @@ const Home = () => {
       <Header />
       <ServicesGrid />
       <FAQs />
-      <AboutSection/>
+      <TeamExperts />
+      <TraumaFocusedTherapy />
+      <AboutSection />
+      <Footer />
     </>
   )
 }

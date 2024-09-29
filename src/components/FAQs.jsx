@@ -32,8 +32,8 @@ const FAQs = () => {
     ];
 
     return (
-        <div className=" bg-gray-50">
-            <h2 className="text-center text-4xl py-16 font-bold">FAQs</h2>
+        <div className=" bg-gray-50 py-16">
+            <h2 className="text-center text-4xl font-bold">FAQs</h2>
             <div className="w-full max-w-7xl flex-col md:flex-row gap-10 flex justify-center mx-auto">
                 {/* FAQs Section */}
                 <div className="w-full md:w-2/3 p-5">
@@ -51,7 +51,7 @@ const FAQs = () => {
 
                             >
                                 <div className="flex justify-between cursor-pointer items-center" onClick={() => toggle(index)}>
-                                    <span className="text-base md:text-lg font-medium"  >{item.title}</span>
+                                    <span className="text-base md:text-lg font-medium select-none"  >{item.title}</span>
                                     {openIndex === index ? <FaAngleUp /> : <FaAngleDown />}
                                 </div>
                                 {openIndex === index && (
@@ -65,7 +65,7 @@ const FAQs = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="w-full md:w-1/2 p-5 flex flex-col space-y-6">
+                <div className="w-full lg:w-1/2 p-5 hidden md:flex flex-col space-y-6 select-none">
                     <div className="relative">
                         <img
                             src="assets/faq_image_1.png"
