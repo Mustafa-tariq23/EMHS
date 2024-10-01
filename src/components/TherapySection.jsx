@@ -21,7 +21,7 @@ const TraumaTherapySection = () => {
         </div>
 
         {/* Right Images */}
-        <div className="lg:w-1/2 w-full flex justify-center shadow-none lg:justify-end">
+        <div className="lg:w-1/2 w-full lg:flex hidden justify-center shadow-none lg:justify-end">
           <div className="relative w-full lg:w-4/5 px-10 select-none">
             {/* Main Image */}
             <img
