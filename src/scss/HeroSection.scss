@@ -40,3 +40,15 @@ header {
     z-index: 1 !important;
     background: #219dbcbe;
 }
+
+.contact_Hero_bg {
+    background-image: url('./assets/Contact_US_Hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // padding: 100px;
+    position: absolute;
+    // opacity: 40%;
+    z-index: -10;
+}
