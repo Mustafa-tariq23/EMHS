@@ -1,6 +1,5 @@
 import React from "react";
 
-// Reusable Star component
 const Star = ({ filled }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
