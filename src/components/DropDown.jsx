@@ -57,6 +57,12 @@ const DropDown  = () => {
                 Marital Counsling{" "}
               </Link>
             </div>
+            <div className="submenu-item">
+              <Link to="/service" className="submenu-link">
+                {" "}
+                treatment of psychiatric illnesses{" "}
+              </Link>
+            </div>
           </div>
         </div>
       </div>

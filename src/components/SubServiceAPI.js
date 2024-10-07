@@ -12,7 +12,7 @@ const SubServiceAPI = [
     img3: "", // Add image here
   },
   {
-    id: 1,
+    id: 2,
     title1: "Psychological Services",
     title1Detail: "Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem ",
     img1: "", // Add image here
@@ -24,7 +24,7 @@ const SubServiceAPI = [
     img3: "", // Add image here
   },
   {
-    id: 1,
+    id: 3,
     title1: "Psychological Services",
     title1Detail: "Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem ",
     img1: "", // Add image here
@@ -36,7 +36,7 @@ const SubServiceAPI = [
     img3: "", // Add image here
   },
   {
-    id: 1,
+    id: 4,
     title1: "Psychological Services",
     title1Detail: "Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem ",
     img1: "", // Add image here
@@ -48,7 +48,7 @@ const SubServiceAPI = [
     img3: "", // Add image here
   },
   {
-    id: 1,
+    id: 5,
     title1: "Psychological Services",
     title1Detail: "Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem ",
     img1: "", // Add image here
@@ -60,7 +60,7 @@ const SubServiceAPI = [
     img3: "", // Add image here
   },
   {
-    id: 1,
+    id: 6,
     title1: "Psychological Services",
     title1Detail: "Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem ",
     img1: "", // Add image here
@@ -72,7 +72,7 @@ const SubServiceAPI = [
     img3: "", // Add image here
   },
   {
-    id: 1,
+    id: 7,
     title1: "Psychological Services",
     title1Detail: "Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem ",
     img1: "", // Add image here
