@@ -68,14 +68,14 @@ const FAQs = () => {
                 <div className="w-full lg:w-1/2 p-5 hidden md:flex flex-col space-y-6 select-none">
                     <div className="relative">
                         <img
-                            src="assets/faq_image_1.png"
+                            src="assets/faq_image_1.webp"
                             alt="FAQ Image 1"
                             className="absolute top-0 left-0 w-full h-screen-xl object-cover rounded-lg shadow-slate-400 shadow-lg"
                         />
                     </div>
                     <div className="relative">
                         <img
-                            src="assets/faq_image_2.png"
+                            src="assets/faq_image_2.webp"
                             alt="FAQ Image 2"
                             className="absolute top-52 -left-8 h-48 md:h-64 object-cover rounded-lg shadow-md shadow-gray-400"
                         />

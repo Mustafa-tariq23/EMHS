@@ -25,7 +25,7 @@ const TraumaTherapySection = () => {
           <div className="relative w-full lg:w-4/5 px-10 select-none">
             {/* Main Image */}
             <img
-              src="./assets/tharapy_IMG.png"
+              src="./assets/tharapy_IMG.webp"
               alt="Therapy"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />

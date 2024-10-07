@@ -5,22 +5,22 @@ const Team = () => {
     {
       name: "Patrik Cortez",
       role: "Doctor",
-      imageSrc: "assets/doctor.png",
+      imageSrc: "assets/doctor.webp",
     },
     {
       name: "Patrik Cortez",
       role: "Doctor",
-      imageSrc: "assets/doctor.png",
+      imageSrc: "assets/doctor.webp",
     },
     {
       name: "Patrik Cortez",
       role: "Doctor",
-      imageSrc: "assets/doctor.png",
+      imageSrc: "assets/doctor.webp",
     },
     {
       name: "Patrik Cortez",
       role: "Doctor",
-      imageSrc: "assets/doctor.png",
+      imageSrc: "assets/doctor.webp",
     },
   ];
 
