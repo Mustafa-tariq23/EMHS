@@ -3,7 +3,7 @@ import Header from './Header'
 import ServicesGrid from './homepageSections/ServicesGrid'
 import FAQs from './FAQs'
 import TeamExperts from './TeamExperts'
-import TraumaFocusedTherapy from './TherapySection'
+import TraumaFocusedTherapy from './homepageSections/TherapySection'
 import Footer from './Footer'
 
 const Home = () => {

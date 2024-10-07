@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button, a, img, input, textarea , select{
+    user-select: none;
+}
