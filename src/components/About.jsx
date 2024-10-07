@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <AboutHeroSection className={'about_hero_bg'} h2={'About Us'}/>
+      <AboutHeroSection img={'about_hero_bg'} h2={'About Us'}/>
       
       <MiddleTicker />
       <AboutUsCards />

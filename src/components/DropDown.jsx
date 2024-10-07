@@ -8,7 +8,9 @@ const DropDown  = () => {
       <div className="menu">
         <div className="item">
           <div className="link hover:text-white duration-500">
+            <Link to={"/service"}>
             <span> Our Services </span>
+            </Link>
             <svg viewBox="0 0 360 360" space="preserve">
               <g id="SVGRepo_iconCarrier">
                 <path

@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <AboutHeroSection className={'contact_Hero_bg'} h2={'Contact Us'} />
+      <AboutHeroSection img={'contact_Hero_bg'} h2={'Contact Us'} />
       <MiddleTicker />
       <ContactMiddleSections />
       <Footer />
