@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const DropDown  = () => {
+const DropDown = () => {
+  const [isOpen, setIsOpen] = useState(false); // State to track submenu visibility
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev); // Toggle the submenu visibility
+  };
+
   return (
     <StyledWrapper>
       <div className="menu">
         <div className="item">
-          <div className="link hover:text-white duration-500">
-            <Link to={"/service"}>
-            <span> Our Services </span>
-            </Link>
+          <div className="link hover:text-white duration-500 flex justify-center items-center" onClick={toggleMenu}>
+            <span>You Want?</span>
             <svg viewBox="0 0 360 360" space="preserve">
               <g id="SVGRepo_iconCarrier">
                 <path
@@ -20,50 +24,45 @@ const DropDown  = () => {
               </g>
             </svg>
           </div>
-          <div className="submenu">
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                Psychological Services{" "}
-              </Link>
+          {isOpen && ( // Conditional rendering for the submenu
+            <div className="submenu">
+              <div className="submenu-item">
+                <Link to="/service/psychological-services" onClick={toggleMenu} className="submenu-link">
+                  Psychological Services
+                </Link>
+              </div>
+              <div className="submenu-item">
+                <Link to="/service/psychiatric-services" onClick={toggleMenu} className="submenu-link">
+                  Psychiatry Services
+                </Link>
+              </div>
+              <div className="submenu-item">
+                <Link to="/service/speech-language-therapy" onClick={toggleMenu}  className="submenu-link">
+                  Speech-Language Therapy
+                </Link>
+              </div>
+              <div className="submenu-item">
+                <Link to="/service/career-counseling" onClick={toggleMenu} className="submenu-link">
+                  Career Counseling
+                </Link>
+              </div>
+              <div className="submenu-item">
+                <Link to="/service/rehab-services" onClick={toggleMenu} className="submenu-link">
+                  Addiction / Rehab Counseling
+                </Link>
+              </div>
+              <div className="submenu-item">
+                <Link to="/service/marital-counseling" onClick={toggleMenu} className="submenu-link">
+                  Marital Counseling
+                </Link>
+              </div>
+              <div className="submenu-item">
+                <Link to="/service/treatment-psychiatric-illnesses" onClick={toggleMenu} className="submenu-link">
+                  Treatment of Psychiatric Illnesses
+                </Link>
+              </div>
             </div>
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                psychiatry services{" "}
-              </Link>
-            </div>
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                Speech-Language Therapy{" "}
-              </Link>
-            </div>
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                Career Counsling{" "}
-              </Link>
-            </div>
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                Addiction / Rehab Counseling{" "}
-              </Link>
-            </div>
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                Marital Counsling{" "}
-              </Link>
-            </div>
-            <div className="submenu-item">
-              <Link to="/service" className="submenu-link">
-                {" "}
-                treatment of psychiatric illnesses{" "}
-              </Link>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </StyledWrapper>
@@ -76,7 +75,6 @@ const StyledWrapper = styled.div`
     line-height: 1;
     color: #000000;
     width: fit-content;
-    // display: flex;
     list-style: none;
   }
 
@@ -98,6 +96,7 @@ const StyledWrapper = styled.div`
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer; // Change cursor to pointer on click
   }
 
   .menu .link::after {
@@ -138,48 +137,22 @@ const StyledWrapper = styled.div`
     margin-top: 1px;
     backdrop-filter: blur(30px);
     overflow: hidden;
-    // background-color#cccccc;
     border: 1px solid #cccccc;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-50px);
+    opacity: 1; // Set to 1 since we are using conditional rendering
+    visibility: visible; // Set to visible since we are using conditional rendering
+    transform: translateY(0); // Set to normal since we are using conditional rendering
     transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
     z-index: 1;
-    pointer-events: none;
+    pointer-events: auto; // Set to auto since we are using conditional rendering
     list-style: none;
   }
 
-  .menu .item:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
-    margin-top: 1px;
-    border-top: transparent;
-    border-color: #219ebc;
-  }
-
-  /*.menu .item:hover .link {
-    color: #ffffff;
-    border-radius: 16px 16px 0 0;
-  }*/
-
-  /*.menu .item:hover .link::after {
-    transform: scaleX(1);
-    transform-origin: right;
-  }*/
-
-  /*.menu .item:hover .link svg {
-    fill: #ffffff;
-    transform: rotate(-180deg);
-  }*/
-
+  /* Remove hover styles */
   .submenu {
     background: white;
   }
 
   .submenu .submenu-item {
-    width: 100%;
     transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
   }
 

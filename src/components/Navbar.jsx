@@ -15,7 +15,7 @@ const Navbar = () => {
         <span className=" h-16 w-28 p-4 self-center text-2xl font-semibold whitespace-nowrap text-white flex items-center space-x-3 rtl:space-x-reverse">
           <Link to="/">
             <img
-              src="assets/logo.png"
+              src="/assets/logo.png"
               alt="logo"
               className="h-16 w-full min-w-32"
             />
@@ -51,17 +51,22 @@ const Navbar = () => {
           id="navbar-multi-level"
         >
           <ul className="flex flex-col font-medium p-0 md:p-0 mt-4 border rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            {/* Home */}
             <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
               <Link to="/" className="block py-2 px-2" aria-current="page">
                 Home
               </Link>
             </li>
-            {/* Services */}
             <li className="flex items-center cursor-pointer hover:bg-[#219ebc] ease-linear rounded-lg duration-00">
               <DropDown />
             </li>
-            {/* about */}
+            <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
+              <Link
+                to="/services"
+                className="block py-2 px-2 duration-300 rounded"
+              >
+                Services
+              </Link>
+            </li>
             <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
               <Link
                 to="/AboutUs"
@@ -70,7 +75,6 @@ const Navbar = () => {
                 About Us
               </Link>
             </li>
-            {/* Contact */}
             <li className="hover:bg-[#219ebc] ease-linear hover:text-white rounded-lg duration-200">
               <Link
                 to="/contactUs"
