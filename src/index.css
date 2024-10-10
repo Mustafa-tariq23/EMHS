@@ -12,3 +12,8 @@ button, a, img, input, textarea , select{
     justify-content: space-between;
     min-height: 100vh;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+  

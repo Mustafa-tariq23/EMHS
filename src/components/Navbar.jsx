@@ -86,7 +86,9 @@ const Navbar = () => {
           </ul>
           <div className="requestAnAppoint cursor-pointer ml-6 py-3 px-2 bg-[#FC8602] text-white font-medium rounded-lg text-[16px] hover:bg-[#f5cb9b] hover:text-black transition ease-in-out duration-300">
             <div className="appointBTN">
-              <a href="#">Rerquest an Appointment</a>
+              <Link to={"/contactUs"}>
+                Rerquest an Appointment
+              </Link>
             </div>
           </div>
         </div>

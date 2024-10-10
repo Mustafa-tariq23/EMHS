@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutUs" element={<About />} />
           <Route path="/contactUs" element={<Contact />} />
-          <Route path="/service" element={<Services />} />
+          <Route path="/services" element={<Services />} />
           <Route path ='/service/:subServices' element = {<SubServices/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -26,61 +26,20 @@ function App() {
   );
 }
 
-
-const NotFound = () => {
-  // Inline styles for animations
-  const styles = {
-    bounce: {
-      animation: 'bounce 1s linear infinite',
-    },
-    wiggle: {
-      animation: 'wiggle 1s linear infinite',
-    },
-  };
-
+export const NotFoundBody = () => {
   return (
     <>
-      <style>
-        {`
-          @keyframes bounce {
-            0%, 100% {
-              transform: translateY(0);
-            }
-            50% {
-              transform: translateY(-10px);
-            }
-          }
-
-          @keyframes wiggle {
-            0%, 100% {
-              transform: rotate(0deg);
-            }
-            25% {
-              transform: rotate(2deg);
-            }
-            50% {
-              transform: rotate(-2deg);
-            }
-            75% {
-              transform: rotate(1deg);
-            }
-          }
-        `}
-      </style>
-      <Navbar />
-      <div className="min-h-[55vh] flex flex-col items-center justify-center bg-gray-100">
+    <div className="min-h-[55vh] flex flex-col items-center justify-center bg-gray-100">
         {/* 404 text with infinite bounce animation */}
         <h1
-          className="text-9xl font-extrabold text-gray-800 tracking-widest"
-          style={{ ...styles.bounce }}
+          className="text-9xl font-extrabold animate-bounce text-gray-800 tracking-widest"
         >
           404
         </h1>
 
         {/* Badge with infinite wiggle animation */}
         <div
-          className="bg-blue-500 px-2 text-sm rounded rotate-12 absolute"
-          style={{ ...styles.wiggle }}
+          className="bg-blue-500 px-2 animate-pulse text-sm rounded absolute"
         >
           Page Not Found
         </div>
@@ -95,6 +54,16 @@ const NotFound = () => {
           </Link>
         </div>
       </div>
+    </>
+  );
+}
+
+
+const NotFound = () => {
+  return (
+    <>
+      <Navbar />
+      <NotFoundBody/>
       <Footer />
     </>
   );

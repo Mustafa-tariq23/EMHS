@@ -86,7 +86,7 @@ const PatientsReview = () => {
   ];
 
   return (
-    <>
+    <div id="testimonial">
       {/* Title */}
       <div className="text-4xl font-semibold text-gray-900 flex items-center justify-center pb-12">
         <h1>
@@ -129,7 +129,7 @@ const PatientsReview = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

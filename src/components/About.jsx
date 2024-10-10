@@ -7,7 +7,7 @@ import MiddleTicker from './MiddleTicker'
 import Team from './TeamExperts'
 const About = () => {
   return (
-    <div>
+    <div id='about'>
       <Navbar />
       <AboutHeroSection img={'about_hero_bg'} h2={'About Us'}/>
       

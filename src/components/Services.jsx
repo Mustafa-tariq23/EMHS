@@ -13,7 +13,7 @@ const Services = () => {
   let h2 = "Services"
   
   return (
-    <div>
+    <div id='service'>
       <Navbar />
       <AboutHeroSection img={'contact_Hero_bg'} h2={h2}/>
       <MiddleTicker/>
